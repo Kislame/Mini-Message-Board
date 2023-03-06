@@ -1,0 +1,10 @@
+extends layout
+
+block content
+ h1 post a message here
+ form(action="/new", method="post",role="form")
+     label(for="messageUser") Author: 
+      input#messageUser(type="text",name="messageUser",placeholder="Author") 
+     label(for="messageText") Message:
+      input#messageText(type="text",name="messageText",placeholder="write ur message here.")
+     button(type="submit") Post
